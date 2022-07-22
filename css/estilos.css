@@ -1,0 +1,314 @@
+. {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.card {
+    background-color: rgb(247, 199, 138);
+    color: rgb(241, 135, 6);
+    width: 25%;
+    height: 380px;
+    padding: 16px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-block-end: 50px;
+    border-radius: 10px;
+    position: relative;
+    border: 5px;
+}
+
+.card__imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+
+.card__titulo {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.card__parrafo {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(250, 163, 49)
+}
+
+.card__absolute {
+    position: absolute;
+    background-color: rgb(250, 180, 94);
+    color: aqua;
+    padding: 1rem 1rem;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 10px;
+}
+
+.seccion {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+
+body {
+    font-family: 'Kurale', serif;
+}
+
+.color-texto {
+    color: rgb(214, 122, 46)
+}
+
+.p {
+    color: rgb(240, 176, 99)
+}
+
+a {
+    color: rgb(179, 126, 12)
+}
+
+.fuente-grande {
+    font-size: 25px;
+}
+
+.div {
+    color: rgb(253, 95, 4);
+}
+
+.propiedades-texto {
+    color: rgb(241, 11, 11);
+    font-size: 15px;
+    font-family: 'Text Me One', sans-serif;
+    padding: 16px;
+    margin-bottom: 16px;
+
+}
+
+.propiedades-fondo {
+    background-color: rgb(250, 241, 228);
+}
+
+.header {
+    background-color: rgb(243, 207, 160);
+    color: rgb(185, 151, 105);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 35;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;    
+}
+.header__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__icono {
+    font-size: 30px;
+    color: rgb(182, 103, 7);
+    
+   
+
+}
+.header__logo {
+    width: 35px;
+    height: 35px;
+}
+main {
+    margin-top: 200px;
+    min-height: 100vh;
+
+}
+
+.nav__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__item {
+    margin-left: 16px;
+
+}
+nav {
+    gap: 2rem;
+}
+
+.whatsapp {
+    background-color: green;
+    color: blanchedalmond;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.footer {
+    background-color: rgb(243, 207, 160);
+    color: rgb(185, 151, 105);
+    margin-top: 200px;
+    padding: 1rem 1rem;
+
+}
+.footer__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+.footer__lista {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+
+
+}
+
+.inicio1 {
+    background-image: url(../floressecas1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.h2 {
+    font-family: 'Sofia', cursive;
+    font-family: 'Text Me One', sans-serif;
+
+}
+
+.felx {
+    display: flex;
+    list-style: none;
+
+}
+
+
+
+.grid {
+    border: 8px orange;
+    padding: 1rem;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+        "img1 img2 img2"
+        "img3 img3 img4"
+        "img5 img6 img4";
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 1rem;
+     
+}
+
+.grid__hijo {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grid__hijo--1 {
+    grid-area: img1;
+}
+
+.grid__hijo--2 {
+    grid-area: img2;
+}
+
+.grid__hijo--3 {
+    grid-area: img3;
+}
+
+.grid__hijo--4 {
+    grid-area: img4;
+}
+
+.grid__hijo--5 {
+    grid-area: img5;
+}
+
+.grid__hijo--6 {
+    grid-area: img6;
+}
+
+.grid__img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+.nav__item--oculto {
+    display: none;
+}
+
+@media screen and (max-width:1032px) {
+    .seccion {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (6, 200px);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6";
+        align-content: stretch;    
+        height: auto;
+
+    }
+    .header__icono {
+        display: block;
+    }
+
+    .card {
+        display: flex;
+        
+    }
+    .nav {
+        display: none;
+        position: fixed;
+        z-index: 1000000;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        
+    }
+    .nav__lista {
+        flex-direction: column;
+    }
+    .nav:target {
+       display:  block;
+    }
+    .nav__item--oculto {
+        display: block;
+    }
+
+}
