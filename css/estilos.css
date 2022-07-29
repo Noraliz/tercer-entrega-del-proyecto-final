@@ -65,6 +65,7 @@ body {
 
 .color-texto {
     color: rgb(214, 122, 46)
+    
 }
 
 .p {
@@ -129,8 +130,8 @@ a {
     height: 35px;
 }
 main {
-    margin-top: 200px;
-    min-height: 100vh;
+    margin-top: 10px;
+    min-height: 50vh;
 
 }
 
@@ -140,6 +141,8 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    padding-left: 0%;
+    margin-bottom: 0%;
 }
 
 .nav__item {
@@ -165,7 +168,7 @@ nav {
 .footer {
     background-color: rgb(243, 207, 160);
     color: rgb(185, 151, 105);
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 1rem 1rem;
 
 }
@@ -197,6 +200,8 @@ nav {
 .h2 {
     font-family: 'Sofia', cursive;
     font-family: 'Text Me One', sans-serif;
+    
+
 
 }
 
@@ -211,7 +216,7 @@ nav {
 .grid {
     border: 8px orange;
     padding: 1rem;
-    height: 300px;
+    height: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 200px);
@@ -261,6 +266,15 @@ nav {
 }
 .nav__item--oculto {
     display: none;
+}
+.bootstrap1__img {
+    
+}
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+    padding: 80px;
+    margin-bottom: 26px;
 }
 
 @media screen and (max-width:1032px) {
