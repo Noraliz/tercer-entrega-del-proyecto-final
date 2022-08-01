@@ -132,6 +132,8 @@ a {
 main {
     margin-top: 10px;
     min-height: 50vh;
+    padding: 5rem;
+
 
 }
 
@@ -196,7 +198,28 @@ nav {
     background-position: center;
    
 }
+.inicio2__titulo {
+    background-color: #f3cf31;
+    padding: 1rem;
+    transition: padding 2s, transform 1s;
+    flex-direction: column;
 
+}
+.inicio2__titulo:hover {
+    
+    background-color: #e4bc0b;
+    transform: rotate(360deg);
+}
+
+.inicio2 {
+    height: 50%;
+    height: 50vh;
+    background-image: linear-gradient(to right top, #f0e6cc, #efe1c4, #eddcbb, #edd7b3, #ecd2ab, #ecd1a6, #eccfa0, #ecce9b, #ecd096, #ecd392, #ebd58d, #e9d889);
+    padding: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .h2 {
     font-family: 'Sofia', cursive;
     font-family: 'Text Me One', sans-serif;
@@ -216,7 +239,7 @@ nav {
 .grid {
     border: 8px orange;
     padding: 1rem;
-    height: 50px;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 200px);
@@ -227,6 +250,7 @@ nav {
     justify-items: stretch;
     align-items: stretch;
     gap: 1rem;
+  
      
 }
 
@@ -276,12 +300,55 @@ nav {
     padding: 80px;
     margin-bottom: 26px;
 }
+.tracking-out-expand-fwd-top {
+	-webkit-animation: tracking-out-expand-fwd-top 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: tracking-out-expand-fwd-top 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    display: inline-block;
+}
+.contacto__mapa {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
 
 @media screen and (max-width:1032px) {
     .seccion {
         text-align: left;
     }
 }
+@-webkit-keyframes tracking-out-expand-fwd-top {
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px) translateY(-200px);
+              transform: translateZ(300px) translateY(-200px);
+      opacity: 0;
+    }
+  }
+  @keyframes tracking-out-expand-fwd-top {
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px) translateY(-200px);
+              transform: translateZ(300px) translateY(-200px);
+      opacity: 0;
+    }
+  }
+  
 
 @media screen and (max-width:599px) {
     .grid {
