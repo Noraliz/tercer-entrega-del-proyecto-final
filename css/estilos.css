@@ -372,7 +372,13 @@ nav {
 
     .card {
         display: flex;
-        
+        width: 80%;
+
+    .card__imagen {
+        width: 80px;    
+        height: 80px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .nav {
         display: none;
