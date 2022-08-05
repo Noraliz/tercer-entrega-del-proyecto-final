@@ -1,0 +1,74 @@
+.whatsapp {
+    background-color: green;
+    color: blanchedalmond;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  .grid {
+    border: 8px orange;
+    padding: 1rem;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+        "img1 img2 img2"
+        "img3 img3 img4"
+        "img5 img6 img4";
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 1rem;
+  
+     
+  }
+  
+  .grid__hijo {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .grid__hijo--1 {
+    grid-area: img1;
+  }
+  
+  .grid__hijo--2 {
+    grid-area: img2;
+  }
+  
+  .grid__hijo--3 {
+    grid-area: img3;
+  }
+  
+  .grid__hijo--4 {
+    grid-area: img4;
+  }
+  
+  .grid__hijo--5 {
+    grid-area: img5;
+  }
+  
+  .grid__hijo--6 {
+    grid-area: img6;
+  }
+  
+  .grid__img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+  }
+  .nav__item--oculto {
+    display: none;
+  }
+  .bootstrap1__img {
+    
+  }
+  .carousel-item img {
+    height: 700px;
+    object-fit: cover;
+    padding: 80px;
+    margin-bottom: 26px;
+  }
