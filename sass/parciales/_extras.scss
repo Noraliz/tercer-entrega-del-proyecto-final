@@ -72,3 +72,13 @@
     padding: 80px;
     margin-bottom: 26px;
   }
+  .tracking-out-expand-fwd-top {
+    -webkit-animation: tracking-out-expand-fwd-top 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: tracking-out-expand-fwd-top 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      display: inline-block;
+    }
+    .contacto__mapa {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
