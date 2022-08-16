@@ -3,6 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+ .itemsContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+  }
+  .item {
+    background-color: rgb(235, 219, 129);
+    width: 270px;
+    height: 270px;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+  .item--d1 {
+    background-image: linear-gradient(to right top, #e4ba52, #efe1c4, #eddcbb);
+  }
+  .item--d2 {
+    background-image: linear-gradient(to right top, #e4ba52, #efe1c4, #eddcbb);
+  }
+  .item__image {
+    position: absolute ;
+  }
+  .item__image:hover {
+    transform: rotate(50deg);
+  }
+  @for $1 form start 1 through 3 {
+    .item--de#($i) {
+      background-image: map-get($degradados, d+$i)
+    }
+  }
 
 .flexbox {
     display: flex;
@@ -223,10 +254,13 @@ nav {
     background-color: #e4bc0b;
     transform: rotate(360deg);
 }
-
+.bienvenidos__contacto {
+    padding: 1rem;
+    justify-content: center;   
+}
 .inicio2 {
     height: 50%;
-    height: 50vh;
+    height: 40vh;
     background-image: linear-gradient(to right top, #f0e6cc, #efe1c4, #eddcbb, #edd7b3, #ecd2ab, #ecd1a6, #eccfa0, #ecce9b, #ecd096, #ecd392, #ebd58d, #e9d889);
     padding: 20rem;
     display: flex;

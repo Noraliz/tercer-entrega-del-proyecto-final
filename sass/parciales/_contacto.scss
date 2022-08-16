@@ -13,3 +13,31 @@
     right: 0;
     bottom: 0;
   }
+  .itemsContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .item {
+    background-color: bisque;
+    width: 250px;
+    height: 250px;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+  .item__image {
+    position: absolute ;
+  }
+  .item__image:hover {
+    transform: rotate(45deg);
+  }
+  $mapadegradado: (
+    d1: linear-gradient(beige),
+    d2: linear-gradient(orange),
+  );
+  @for $1 from start 1 through 3 {
+    .item--de#{$i} {
+      background-image: map-get($degradados, d+$i);
+    }
+  }
