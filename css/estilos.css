@@ -296,6 +296,7 @@ nav {
 .grid__hijo {
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
 .grid__hijo--1 {
@@ -326,6 +327,14 @@ nav {
     width: 95%;
     height: 95%;
     object-fit: cover;
+}
+.grid__text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(156, 226, 238, 0.63);
+    color: #088ee7f3;
+    padding: 0.5rem 1rem;
 }
 .nav__item--oculto {
     display: none;
