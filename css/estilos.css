@@ -8,6 +8,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
+    padding: 1rem;
 
   }
   .item {
@@ -255,14 +256,16 @@ nav {
     transform: rotate(360deg);
 }
 .bienvenidos__contacto {
-    padding: 1rem;
+    padding: 4rem;
     justify-content: center;   
+    margin-bottom: 50px;
+    display: flex;
 }
 .inicio2 {
     height: 50%;
     height: 40vh;
     background-image: linear-gradient(to right top, #f0e6cc, #efe1c4, #eddcbb, #edd7b3, #ecd2ab, #ecd1a6, #eccfa0, #ecce9b, #ecd096, #ecd392, #ebd58d, #e9d889);
-    padding: 20rem;
+    padding: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,12 +342,15 @@ nav {
 .nav__item--oculto {
     display: none;
 }
+.faq1 {
+    display: inline-block;
+}
+
 
 .carousel-item img {
-    height: 700px;
+    height: 500px;
     object-fit: cover;
-    padding: 80px;
-    margin-bottom: 26px;
+    
 }
 .tracking-out-expand-fwd-top {
 	-webkit-animation: tracking-out-expand-fwd-top 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -458,6 +464,10 @@ nav {
     }
     .main {
         flex-direction: column;
+        width: 100%;
+    }
+    .container {
+        display: flex;
         width: 100%;
     }
 }

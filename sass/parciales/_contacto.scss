@@ -36,7 +36,7 @@
     d1: linear-gradient(beige),
     d2: linear-gradient(orange),
   );
-  @for $1 from start 1 through 3 {
+  /*@for $1 from start 1 through 3 {
     .item--de#{$i} {
       background-image: map-get($degradados, d+$i);
     }
